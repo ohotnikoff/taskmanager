@@ -30,7 +30,11 @@ $this->title = $title;
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </div>
-                <img class="card-img-right flex-auto d-none d-md-block" src="/images/staff/nophoto.png" alt="Card image cap">
+                <?php if($item['id'] == 1): ?>
+                    <img class="card-img-right flex-auto d-none d-md-block" src="/images/staff/1.jpg" alt="Card image cap">
+                <?php else: ?>
+                    <img class="card-img-right flex-auto d-none d-md-block" src="/images/staff/nophoto.png" alt="Card image cap">
+                <?php endif; ?>
             </div>
         </div>
         <?php endforeach; ?>
