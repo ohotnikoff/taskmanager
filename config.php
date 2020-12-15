@@ -18,6 +18,10 @@ return [
         '' => [
             'controller' => 'site',
             'action' => 'index',
+        ],
+        'staff' => [
+            'controller' => 'staff',
+            'action' => 'index',
         ]
     ],
 ];
